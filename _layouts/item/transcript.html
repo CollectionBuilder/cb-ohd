@@ -52,11 +52,13 @@ endcapture -%}
       {% include transcript/item/metadata-modal.html %}
 
     </div>
+    {% if site.data.theme.transcript-fields contains 'image'  %}
     {% if page.image_small or page.image_thumb %}
     <div class="col-md-3 meta{% if av == 'vimeo' or av == 'youtube'%} d-none d-md-block{% endif %}">
       <img class="img-thumbnail timeline-thumb" src="{{page.image_small | default: page.image_thumb | relative_url }}" alt="{{page.title}}"> 
 
     </div>
+    {% endif %}
     {% endif %}
   </div>
 
