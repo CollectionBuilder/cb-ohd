@@ -80,7 +80,7 @@ search-child-objects: true # true / false - if true, child objects will appear o
 ##########
 # Transcripts / Oral History as Data Options 
 # 
-transcript-fields: "description,date,location,interviewer" # choose from the following fields --> description,date,location,interviewer,interviewee,bio,image 
+transcript-fields: "description,date,location,interviewer,image" # choose from the following fields --> description,date,location,interviewer,interviewee,bio,image 
 # list the fields you'd like displayed, separated by comma
 
 
